@@ -21,7 +21,7 @@ body {
 }
 
 .side-bar {
-  width: 306px;
+  flex-basis: 306px;
   height: 1198px;
   padding: 36px 28px 76px 28px;
   background: #fff;
@@ -32,6 +32,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: -0.14px;
 }
 
 .logo {
@@ -40,22 +41,79 @@ body {
 .logo__link {
   display: flex;
   align-items: center;
-  justify-content: baseline;
 }
 
 .logo__title {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 1%;
+  letter-spacing: 0.26px;
+}
+
+.logo__version {
+  display: inline-block;
+  color: #838383;
+  font-size: 10px;
+  letter-spacing: -0.1px;
 }
 
 .logo__icon {
   margin-right: 8px;
 }
-.logo__ .menu__link:hover {
-  background-color: #5932ea;
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 65px;
+}
+
+.menu__link {
+  display: flex;
+  padding: 13px 15px 12px 11px;
+  align-items: center;
+}
+
+.menu__link:hover {
+  border-radius: 8px;
+  background: #5932ea;
+  color: #ffffff;
+}
+
+.menu__icon {
+  fill: currentColor;
+  stroke: currentColor;
+  margin-right: 14px;
+}
+
+.menu__chevron {
+  stroke: currentColor;
+  margin-left: auto;
+}
+
+.user {
+  display: flex;
+  margin-top: 586px;
+}
+
+.user__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  margin-right: 12px;
+}
+
+.user__nickname {
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+}
+
+.user__spec {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
 }
