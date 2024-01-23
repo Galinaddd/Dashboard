@@ -1,7 +1,4 @@
-h1,
 h2,
-h3,
-h4,
 p,
 ul {
   margin: 0;
@@ -16,6 +13,7 @@ ul {
 .list {
   list-style: none;
 }
+
 body {
   display: flex;
 }
@@ -146,7 +144,6 @@ body {
   margin-top: 51px;
   background-color: #fff;
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
-  outline: 1px solid black;
 }
 
 .main-bar__title {
@@ -327,4 +324,9 @@ td {
 .pagination__item:nth-last-child(3) .pagination__button {
   background-color: transparent;
   border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-bar {
+  }
 }
