@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="side-bar">
+    <section class="side-bar">
       <div class="logo">
         <a href="" class="logo__link link">
           <svg class="logo__icon" width="37" height="37">
@@ -32,57 +32,57 @@
       </div>
       <ul class="menu list">
         <li class="menu__item">
-          <a href="" class="menu__link link">
+          <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#key-square"></use></svg
-            >Dashboard</a
-          >
+            >Dashboard
+            </button type="button">
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link link">
+          <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#d-square-1"></use></svg
             >Product
             <svg class="menu__chevron" width="16" height="16">
               <use href="./icons/icons.svg#chevron-right"></use></svg
-          ></a>
+          ></button>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link link">
+         <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#user-square-active"></use></svg
             >Customers
             <svg class="menu__chevron" width="16" height="16">
               <use href="./icons/icons.svg#chevron-right"></use></svg
-          ></a>
+          ></button>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link link">
+          <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#wallet-money-2"></use></svg
             >Income
             <svg class="menu__chevron" width="16" height="16">
               <use href="./icons/icons.svg#chevron-right"></use></svg
-          ></a>
+          ></button>
         </li>
 
         <li class="menu__item">
-          <a href="" class="menu__link link">
+          <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#discount-shape-1"></use></svg
             >Promote
             <svg class="menu__chevron" width="16" height="16">
               <use href="./icons/icons.svg#chevron-right"></use></svg
-          ></a>
+          ></button>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link link">
+          <button type="button" class="menu__button ">
             <svg class="menu__icon" width="24" height="24">
               <use href="./icons/icons.svg#message-question-1"></use></svg
             >Help
             <svg class="menu__chevron" width="16" height="16">
               <use href="./icons/icons.svg#chevron-right"></use></svg
-          ></a>
+          ></button>
         </li>
       </ul>
       <div class="user">
@@ -92,22 +92,22 @@
           <p class="user__spec">Project Manager</p>
         </div>
       </div>
-    </div>
-
-    <div class="main">
-      <p>Hello Evano 👋🏼,</p>
-      <div class="main_info">
-        <h1 class="main__title">All Customers</h1>
-        <p class="status">Active Members</p>
-        <form action="" class="search-form">
+    </section>
+    <section class="main-bar"> 
+      <p class="invitation">Hello Evano 👋🏼,</p>
+      <div class="main">
+      <div class="main-bar_info">
+        <h1 class="main-bar__title">All Customers</h1>
+        <p class="main-bar__subtitle">Active Members</p>
+        <form class="search-form">
           <input class="search-form__input" type="text" placeholder="Search" />
-          <svg width="24" height="24">
+          <svg class="search-form__icon" width="24" height="24">
             <use href="./icons/icons.svg#search-1"></use>
           </svg>
         </form>
 
-        <table>
-          <thead>
+        <table class="data-table">
+          <thead class="data-table__head">
             <tr>
               <th>Customer Name</th>
               <th>Company</th>
@@ -118,14 +118,14 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="data-table__body">
             <tr>
               <td>Jane Cooper</td>
               <td>Microsoft</td>
               <td>(225) 555-0118</td>
               <td>jane@microsoft.com</td>
               <td>United States</td>
-              <td><span>Active</span></td>
+              <td><span class="status status--active">Active</span></td>
             </tr>
             <tr>
               <td>Floyd Miles</td>
@@ -133,7 +133,7 @@
               <td>(205) 555-0100</td>
               <td>floyd@yahoo.com</td>
               <td>Kiribati</td>
-              <td><span>Inactive</span></td>
+              <td><span class="status status--inactive">Inactive</span></td>
             </tr>
             <tr>
               <td>Ronald Richards</td>
@@ -141,7 +141,7 @@
               <td>(302) 555-0107</td>
               <td>ronald@adobe.com</td>
               <td>Israel</td>
-              <td><span>Inactive</span></td>
+              <td><span class="status status--inactive">Inactive</span></td>
             </tr>
             <tr>
               <td>Marvin McKinney</td>
@@ -149,7 +149,7 @@
               <td>(252) 555-0126</td>
               <td>marvin@tesla.com</td>
               <td>Iran</td>
-              <td><span>Active</span></td>
+              <td><span class="status status--active">Active</span></td>
             </tr>
             <tr>
               <td>Jerome Bell</td>
@@ -157,7 +157,7 @@
               <td>(629) 555-0129</td>
               <td>jerome@google.com</td>
               <td>Réunion</td>
-              <td><span>Active</span></td>
+              <td><span class="status status--active">Active</span></td>
             </tr>
             <tr>
               <td>Kathryn Murphy</td>
@@ -165,7 +165,7 @@
               <td>(406) 555-0120</td>
               <td>kathryn@microsoft.com</td>
               <td>Curaçao</td>
-              <td><span>Active</span></td>
+              <td><span class="status status--active">Active</span></td>
             </tr>
             <tr>
               <td>Jacob Jones</td>
@@ -173,7 +173,7 @@
               <td>(208) 555-0112</td>
               <td>jacob@yahoo.com</td>
               <td>Brazil</td>
-              <td><span>Active</span></td>
+              <td><span class="status status--active">Active</span></td>
             </tr>
             <tr>
               <td>Kristin Watson</td>
@@ -181,43 +181,46 @@
               <td>(704) 555-0127</td>
               <td>kristin@facebook.com</td>
               <td>Åland Islands</td>
-              <td><span>Inactive</span></td>
+              <td><span class="status status--inactive">Inactive</span></td>
             </tr>
           </tbody>
         </table>
         <div class="pagination">
           <p class="pagination__info">Showing data 1 to 8 of 256K entries</p>
-          <ul class="pagination__list">
+          <ul class="pagination__list list ">
             <li class="pagination__item">
-              <botton type="button"><</botton>
+              <botton class="pagination__button" type="button"><</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">1</botton>
+              <botton class="pagination__button" type="button">1</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">2</botton>
+              <botton class="pagination__button" type="button">2</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">3</botton>
+              <botton class="pagination__button" type="button">3</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">4</botton>
+              <botton class="pagination__button" type="button">4</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">5</botton>
+              <botton class="pagination__button" type="button">5</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">...</botton>
+              <botton  class="pagination__button"type="button">...</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">40</botton>
+              <botton class="pagination__button" type="button">40</botton>
             </li>
             <li class="pagination__item">
-              <botton type="button">></botton>
+              <botton class="pagination__button" type="button">></botton>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
+      
+
   </body>
 </html>

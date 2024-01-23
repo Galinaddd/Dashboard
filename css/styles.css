@@ -24,15 +24,14 @@ body {
   flex-basis: 306px;
   height: 1198px;
   padding: 36px 28px 76px 28px;
-  background: #fff;
-  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
-
   color: #9197b3;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.14px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
 }
 
 .logo {
@@ -70,15 +69,20 @@ body {
   margin-top: 65px;
 }
 
-.menu__link {
+.menu__button {
   display: flex;
-  padding: 13px 15px 12px 11px;
   align-items: center;
+  padding: 13px 15px 12px 11px;
+  width: 250px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
 }
 
-.menu__link:hover {
-  border-radius: 8px;
-  background: #5932ea;
+.menu__button:hover,
+.menu__button:focus {
+  background-color: #5932ea;
   color: #ffffff;
 }
 
@@ -116,4 +120,211 @@ body {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
+}
+
+.main-bar {
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 1.5;
+
+  padding-top: 41px;
+  padding-left: 71px;
+  background-color: #fafbff;
+  flex-grow: 1;
+}
+
+.invitation {
+  color: #000;
+  font-size: 24px;
+}
+
+.main {
+  position: relative;
+  width: 968px;
+  padding: 30px 40px 40px 38px;
+
+  margin-top: 51px;
+  background-color: #fff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  outline: 1px solid black;
+}
+
+.main-bar__title {
+  margin-bottom: 7px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+}
+
+.main-bar__subtitle {
+  color: #16c098;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.14px;
+}
+.search-form {
+  position: absolute;
+  top: 44px;
+  right: 53px;
+}
+
+.search-form__input {
+  position: relative;
+  width: 216px;
+  padding: 10px 10px 10px 40px;
+  color: #b5b7c0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+  border: none;
+  border-radius: 10px;
+  background: #f9fbff;
+}
+
+.search-form__icon {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.data-table {
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  text-align: left;
+  background-color: #fff;
+}
+
+th,
+td {
+  border-bottom: 2px solid #eee; /* Колір ліній між рядками */
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 210px;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 131px;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  width: 156px;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  width: 200px;
+}
+td:nth-child(5),
+th:nth-child(5) {
+  width: 140px;
+}
+
+td:nth-child(6),
+th:nth-child(6) {
+  width: 124px;
+  text-align: center;
+}
+
+th {
+  padding-bottom: 14px;
+}
+
+td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.data-table__head {
+  color: #b5b7c0;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
+.data-table__body {
+  color: #292d32;
+  font-size: 14px;
+
+  letter-spacing: -0.14px;
+}
+
+.status {
+  display: inline-block;
+  width: 80px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+}
+
+.status--active {
+  color: #008767;
+  border: 1px solid #00b087;
+
+  background: rgba(22, 192, 152, 0.38);
+}
+
+.status--inactive {
+  color: #df0404;
+  border: 1px solid #df0404;
+  background: #ffc5c5;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__info {
+  color: #b5b7c0;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: auto;
+  color: #404b52;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.12px;
+}
+
+.pagination__button {
+  width: 24px;
+  padding: 6px 0;
+  color: #404b52;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.12px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+  color: #fff;
+  border: 1px solid #5932ea;
+  background: #5932ea;
+}
+
+.pagination__item:nth-last-child(3) .pagination__button {
+  background-color: transparent;
+  border: none;
 }
